@@ -10912,7 +10912,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: #212529;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10947,12 +10947,20 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-color: #212529;
+  /* background-image: url("../assets/img/part.webp"); */
+
+  /* background-image: url("../assets/img/header-bg.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
+/* header.masthead .tambahan {
+  background-color: rgba(33, 37, 41, 0.9);
+  width: 120%;
+  height: 300%;
+} */
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -10966,6 +10974,7 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 @media (min-width: 768px) {
@@ -11001,7 +11010,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(0, 0, 0, 0.4);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11313,4 +11322,42 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.brand-logo-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand-logo {
+    max-height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.portfolio-item {
+    transition: transform 0.3s ease;
+}
+
+/* .portfolio-item:hover {
+    transform: translateY(-5px);
+} */
+
+/* .portfolio-hover {
+    background-color: rgba(33, 37, 41, 0.9);
+} */
+
+.portfolio-hover-content {
+    color: white;
+    text-align: center;
+}
+
+.portfolio-hover-content p {
+    margin: 0;
+    font-size: 14px;
 }
